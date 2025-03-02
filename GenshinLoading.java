@@ -1,4 +1,4 @@
-package com.mycompany.myapp;
+package com.jux.GenshinLoading;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
