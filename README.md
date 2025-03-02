@@ -1,6 +1,6 @@
 ### Genshin Loading(Android)
 <img src="./load.png">
-<img src="./shot.png">
+<img src="./shot.jpg">
 <a href="./example.java">download example</a>
 
 You can use default picture<br/>
