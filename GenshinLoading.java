@@ -1,11 +1,6 @@
 package com.jux.GenshinLoading;
 import android.graphics.Bitmap;
-import android.graphics.Canvas;
 import android.graphics.Color;
-import android.graphics.Paint;
-import android.graphics.Xfermode;
-import android.graphics.PorterDuffXfermode;
-import android.graphics.PorterDuff;
 public class GenshinLoading {
     int[] colors;
     int[] size={0,0};
@@ -23,7 +18,7 @@ public class GenshinLoading {
     public Bitmap programTo(int i) {
         if (i == last) return resultBitmap;
         if (i < 0 || i > size[0])return null;
-        for (int w=(first?0:(last < i ?last: i));w < (first?(last < i ?i: last):size[0]);w++) {
+        for (int w=(first?0:Integer.min(last,i));w < (first?Integer.max(last,i):size[0]);w++) {
             for (int h=0;h < size[1];h++) {
                 if (Color.alpha(bitmap.getPixel(w, h)) != 00) {
                     if (w <= i) {
